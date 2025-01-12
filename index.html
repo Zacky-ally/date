@@ -1,52 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Date Night Hub</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Collection</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Magical Night</title>
+    <style>
+        /* Bintang dengan pergerakan lembut */
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkling 2s infinite, move 10s linear infinite;
+        }
 
-<body>
-    <header class="navbar">
-        <div class="logo">Car<span>Collection</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        @keyframes twinkling {
+
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes move {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(-50px);
+            }
+        }
+
+
+
+        @keyframes mist {
+            0% {
+                transform: translate(-20%, -20%);
+            }
+
+            100% {
+                transform: translate(20%, 20%);
+            }
+        }
+
+        .shooting-star {
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            background: linear-gradient(90deg, white, transparent);
+            opacity: 0;
+            transform: rotate(45deg);
+            animation: shoot 3s linear infinite;
+        }
+
+        @keyframes shoot {
+            0% {
+                opacity: 0;
+                transform: translate(0, 0) rotate(45deg);
+            }
+            10% {
+                opacity: 1;
+            }
+            0%{
+                opacity: 0;
+                transform: translate(400px, -400px) rotate(45deg);
+            }
+        }
+</style>
+</head>
+    <header>
+        <h1>Our Date Night Hub</h1>
+        <p>Pick Your Perfect Date!</p>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Welcome to <span>Car Collection</span></h1>
-        <p>Explore the best and most exclusive cars in the world.</p>
-        <a href="#collection" class="cta-button">View Collection</a>
-    </section>
+    <audio autoplay loop>
+        <source src="WhatsApp Audio 2025-01-12 at 23.22.21_5343f5f2.mp3" type="audio/mp3">
+    </audio>
 
-    <section id="collection" class="collection">
-        <h2>Our Collection</h2>
-        <div class="grid">
-            <div class="car-card">
-                <img src="rt.jpg" alt="Car 1">
-                <h3>Car Model 1</h3>
-                <p>High performance and luxury combined.</p>
-            </div>
-            <div class="car-card">
-                <img src="th.jpeg" alt="Car 2">
-                <h3>Car Model 2</h3>
-                <p>Experience speed like never before.</p>
-            </div>
-            <!-- Add more car cards as needed -->
+    <section class="date-themes">
+        <div class="theme-card">
+            <img src="33.jpg" alt="Movie Night">
+            <h2>Movie Marathon Night</h2>
+            <p>Pick a movie and enjoy together!</p>
+            <a href="#movie" class="btn">Learn More</a>
         </div>
+
+        <div class="theme-card">
+            <img src="34.jpg" alt="Dinner Date">
+            <h2>Virtual Dinner Date</h2>
+            <p>Cook and dine together from a distance.</p>
+            <a href="#dinner" class="btn">Learn More</a>
+        </div>
+
+        <div class="theme-card">
+            <img src="35.webp" alt="Game Night">
+            <h2>Game Night</h2>
+            <p>Play fun games online together!</p>
+            <a href="#game" class="btn">Learn More</a>
+        </div>
+
+        <!-- More date themes can be added here -->
     </section>
 
     <footer>
-        <p>© 2025 Car Collection | Follow us on <a href="#">Social Media</a></p>
+        <p>&copy; 2025 Our Date Night Hub</p>
     </footer>
-</body>
 
+    <div class="star"></div>
+
+    <script src="script.js"></script>
+</body>
 </html>
