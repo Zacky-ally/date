@@ -1,0 +1,121 @@
+/* style.css */
+body {
+    font-family: 'Georgia', serif;
+    /* Elegant font for a romantic feel */
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    /* Dark background */
+    color: #d3c6c0;
+    /* Soft light text */
+}
+
+header {
+    background-color: #1e1c1c;
+    /* Deep red color */
+    color: crimson;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.8em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px crimson, 0 0 40px crimson;
+    /* Subtle shadow for text */
+}
+
+p {
+    font-size: 1.4em;
+    font-style: italic;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.date-themes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.theme-card {
+    background-color: #322438;
+    /* Dark, muted background for the cards */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 270px;
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    position: relative;
+}
+
+.theme-card:hover {
+    transform: scale(1.05);
+    background-color: #492b5d;
+    /* Slightly lighter on hover */
+}
+
+.theme-card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    filter: grayscale(100%) brightness(80%);
+    /* Make icons dark and romantic */
+    transition: filter 0.3s;
+}
+
+.theme-card:hover img {
+    filter: grayscale(0) brightness(100%);
+    /* Show icons fully in color when hovered */
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #d95c5c;
+    /* Soft romantic red color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #d1b1a0;
+}
+
+.btn {
+    background-color: #d95c5c;
+    /* Romantic red */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b14848;
+    /* Slightly darker red on hover */
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.2em;
+}
+
+footer p {
+    margin: 0;
+    font-style: italic;
+}
